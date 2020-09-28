@@ -362,6 +362,31 @@ table {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+/*
+* input text and number box
+*/
+input[type=text] {
+  padding: 2px 2px;
+	margin: 2px 0;
+	box-sizing: border-box;
+}
+input[type=number] {
+  padding: 2px 2px;
+  margin: 2px 0;
+  box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+	width: 50%;
+	padding: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+	display: table;
+	clear: both;
+}
 
 /**
  * Syntax highlighting styles
