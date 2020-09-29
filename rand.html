@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="./assets/main.css">
   <link rel="stylesheet" href="./assets/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/academicons.min.css">
+	<script>
+  function genRand(min, max, decimalPlaces) {  
+    var rand = Math.random()*(max-min) + min;
+    var power = Math.pow(10, decimalPlaces);
+    return Math.floor(rand*power) / power;
+}
+	</script>
 </head>
 <body>
 <main class="page-content" aria-label="Content">
@@ -71,13 +78,8 @@
     </div>
   </div>
   <br /><br />
-  <script>
-  function genRand(min, max, decimalPlaces) {  
-    var rand = Math.random()*(max-min) + min;
-    var power = Math.pow(10, decimalPlaces);
-    return Math.floor(rand*power) / power;
-}
-
+  
+<script>
 //for (var i=0; i<20; i++) {
   document.write(genRand(0, 10, 2) + "<br>");
 	  document.write(Date());
