@@ -26,10 +26,10 @@
 	}
 	window.onload = function() {
 		var myalpha = genRand(0.3, 0.8, 2, 0);
-		//            document.getElementById("alpha").value = myalpha;
-		var myk0 = genRand(0, 1, 2, 1);
+		            document.getElementById("alpha").value = myalpha;
+		//var myk0 = genRand(0, 1, 2, 1);
 		//            document.getElementById("k0").value = myk0;
-		var mykc = genRand(0, 1, 2, 2);
+		//var mykc = genRand(0, 1, 2, 2);
 		//            document.getElementById("kc").value = mykc;
 	}
 	</script>
@@ -51,7 +51,7 @@
 					<br>
 					<div>
 						<p>\(C_O = \)
-							<input type="number" id="conc" min="0" max="2" step="0.1" value="1"> \( \text{mol/cm}^3 \), initial concentration of \( O \) </p>
+							<input type="number" id="conc" min="0" max="2" step="0.1" readonly="" value="1"> \( \text{mol/cm}^3 \), initial concentration of \( O \) </p>
 						<p>\(D = \)
 							<input type="text" id="D" value="1E-5" readonly=""> \(\text{cm}^2 \text{/s} \), diffusion coefficient of both \( O \) and \( R \)</p>
 						<p> \(\eta_i = \)
@@ -60,8 +60,8 @@
 							<input type="text" id="etaf" value="-0.2" readonly=""> \( \text{V} \), final overpotential </p>
 						<p> \( \nu = \)
 							<input type="text" id="v" value="1E-3" readonly=""> \( \text{V/s} \), scan rate </p>
-						<p> \( \alpha = \)
-							<input type="text" id="alpha" value="0.5" readonly="">, charge transfer coefficient </p>
+						<p> <!--\( \alpha = \)-->
+							<input type="text" id="alpha" value="0" readonly="" hidden ><!-- charge transfer coefficient --></p>
 						<p> \( k^0 = \)
 							<input type="text" id="k0" value="1E-2" readonly=""> \( \text{cm/s} \), electrochemical rate constant </p>
 						<p>\( k_c = \)
